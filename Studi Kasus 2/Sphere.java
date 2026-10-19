@@ -1,0 +1,35 @@
+//********************************************************************
+//  Sphere.java       Author: Lewis/Loftus
+//
+//  Represents a sphere, a descendant of Shape.
+//********************************************************************
+
+public class Sphere extends Shape
+{
+   private double radius;   // radius in feet
+
+   //-----------------------------------------------------------------
+   //  Constructor: sets up the sphere.
+   //-----------------------------------------------------------------
+   public Sphere (double r)
+   {
+      super ("Sphere");
+      radius = r;
+   }
+
+   //-----------------------------------------------------------------
+   //  Returns the surface area of the sphere.
+   //-----------------------------------------------------------------
+   public double area()
+   {
+      return 4 * Math.PI * radius * radius;
+   }
+
+   //-----------------------------------------------------------------
+   //  Returns the sphere as a String.
+   //-----------------------------------------------------------------
+   public String toString()
+   {
+      return super.toString() + " of radius " + radius;
+   }
+}
